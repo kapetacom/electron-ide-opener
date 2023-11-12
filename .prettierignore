@@ -1,0 +1,9 @@
+dist/*
+node_modules/*
+CHANGELOG.md
+README.md
+LICENSE
+package.json
+.github
+types/
+package-lock.json
