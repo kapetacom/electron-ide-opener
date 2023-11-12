@@ -8,20 +8,32 @@
         "name": "Kapeta",
         "url": "https://kapeta.com"
     },
-    "types": "./dist/index.d.ts",
-    "main": "./dist/index.js",
-    "module": "./dist/index.js",
-    "type": "module",
+    "type": "commonjs",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/esm/index.d.ts",
+                "default": "./dist/esm/index.js"
+            },
+            "require": {
+                "types": "./dist/cjs/index.d.cts",
+                "default": "./dist/cjs/index.js"
+            }
+        }
+    },
+    "types": "./dist/esm/index.d.ts",
+    "main": "./dist/cjs/index.js",
     "scripts": {
         "clean": "rm -rf ./dist",
-        "build:tsc": "tsc --outDir ./dist",
-        "build": "npm run clean && npm run build:tsc",
+        "build:esm": "tsc --module node16 --moduleResolution node16 --outDir ./dist/esm && echo '{\"type\":\"module\"}' > ./dist/esm/package.json",
+        "build:cjs": "tsc --module commonjs --moduleResolution node --outDir ./dist/cjs && echo '{\"type\":\"commonjs\"}' > ./dist/cjs/package.json",
+        "build": "npm run clean && npm run build:esm && npm run build:cjs",
         "prepublishOnly": "npm run build",
         "test": "tsc --noEmit",
         "format": "prettier --write ."
     },
     "dependencies": {
-        "app-path": "^4.0.0",
+        "app-path": "^3.3.0",
         "registry-js": "^1.15.1"
     },
     "devDependencies": {
