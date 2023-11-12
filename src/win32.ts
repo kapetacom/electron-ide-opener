@@ -1,9 +1,7 @@
 import * as Path from 'path';
-
 import { enumerateValues, HKEY, RegistryValue, RegistryValueType } from 'registry-js';
-import { pathExists } from './path-exists';
-
-import { IFoundEditor } from './found-editor';
+import { pathExists } from './path-exists.js';
+import { IFoundEditor } from './found-editor.js';
 
 interface IWindowsAppInformation {
     displayName: string;

@@ -1,9 +1,9 @@
-import { ExternalEditorError } from './shared';
-import { IFoundEditor } from './found-editor';
-import { getAvailableEditors as getAvailableEditorsDarwin } from './darwin';
-import { getAvailableEditors as getAvailableEditorsWindows } from './win32';
-import { getAvailableEditors as getAvailableEditorsLinux } from './linux';
-import { __DARWIN__, __LINUX__, __WIN32__ } from './env';
+import { ExternalEditorError } from './shared.js';
+import { IFoundEditor } from './found-editor.js';
+import { getAvailableEditors as getAvailableEditorsDarwin } from './darwin.js';
+import { getAvailableEditors as getAvailableEditorsWindows } from './win32.js';
+import { getAvailableEditors as getAvailableEditorsLinux } from './linux.js';
+import { __DARWIN__, __LINUX__, __WIN32__ } from './env.js';
 
 let editorCache: ReadonlyArray<IFoundEditor<string>> | null = null;
 

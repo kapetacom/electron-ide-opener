@@ -1,7 +1,7 @@
 import { spawn, SpawnOptions } from 'child_process';
-import { pathExists } from './path-exists';
-import { ExternalEditorError, FoundEditor } from './shared';
-import { __DARWIN__ } from './env';
+import { pathExists } from './path-exists.js';
+import { ExternalEditorError, FoundEditor } from './shared.js';
+import { __DARWIN__ } from './env.js';
 
 /**
  * Open a given file or folder in the desired external editor.

@@ -1,6 +1,6 @@
+import { pathExists } from './path-exists.js';
+import { IFoundEditor } from './found-editor.js';
 import appPath from 'app-path';
-import { pathExists } from './path-exists';
-import { IFoundEditor } from './found-editor';
 
 /** Represents an external editor on macOS */
 interface IDarwinExternalEditor {

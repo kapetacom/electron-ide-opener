@@ -1,5 +1,5 @@
-import { pathExists } from './path-exists';
-import { IFoundEditor } from './found-editor';
+import { pathExists } from './path-exists.js';
+import { IFoundEditor } from './found-editor.js';
 
 /** Represents an external editor on Linux */
 interface ILinuxExternalEditor {
