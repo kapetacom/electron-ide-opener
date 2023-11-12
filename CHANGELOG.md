@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/kapetacom/electron-ide-opener/compare/v1.0.2...v1.0.3) (2023-11-12)
+
+
+### Bug Fixes
+
+* Dual build attempt ([c137273](https://github.com/kapetacom/electron-ide-opener/commit/c137273b8102cdc97fc36057d97c16970000f060))
+
 ## [1.0.2](https://github.com/kapetacom/electron-ide-opener/compare/v1.0.1...v1.0.2) (2023-11-12)
 
 
