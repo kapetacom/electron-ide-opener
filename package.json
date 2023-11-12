@@ -1,0 +1,71 @@
+{
+    "name": "@kapeta/electron-ide-opener",
+    "version": "0.0.1",
+    "description": "Electron IDE opener - extracted from Github Desktop",
+    "license": "MIT",
+    "author": {
+        "email": "engineering@kapeta.com",
+        "name": "Kapeta",
+        "url": "https://kapeta.com"
+    },
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/esm/index.d.ts",
+                "default": "./dist/esm/index.js"
+            },
+            "require": {
+                "types": "./dist/cjs/index.d.cts",
+                "default": "./dist/cjs/index.js"
+            }
+        }
+    },
+    "types": "./dist/esm/index.d.ts",
+    "main": "./dist/cjs/index.js",
+    "scripts": {
+        "clean": "rm -rf ./dist",
+        "build:esm": "tsc --module esnext --outDir ./dist/esm && echo '{\"type\":\"module\"}' > ./dist/esm/package.json",
+        "build:cjs": "tsc --module commonjs --outDir ./dist/cjs && echo '{\"type\":\"commonjs\"}' > ./dist/cjs/package.json",
+        "build": "npm run clean && npm run build:esm && npm run build:cjs",
+        "prepublishOnly": "npm run build",
+        "test": "tsc --noEmit",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "app-path": "^4.0.0",
+        "registry-js": "^1.15.1"
+    },
+    "devDependencies": {
+        "@kapeta/prettier-config": "^0.6.2",
+        "@tsconfig/node18": "^18.2.2",
+        "@types/node": "^18.18.9",
+        "prettier": "^2.8.8",
+        "typescript": "^5.2.2"
+    },
+    "prettier": "@kapeta/prettier-config",
+    "release": {
+        "plugins": [
+            "@semantic-release/commit-analyzer",
+            "@semantic-release/release-notes-generator",
+            [
+                "@semantic-release/changelog",
+                {
+                    "changelogFile": "CHANGELOG.md"
+                }
+            ],
+            "@semantic-release/npm",
+            "@semantic-release/github",
+            [
+                "@semantic-release/git",
+                {
+                    "assets": [
+                        "CHANGELOG.md",
+                        "package.json",
+                        "package-lock.json"
+                    ],
+                    "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+                }
+            ]
+        ]
+    }
+}
