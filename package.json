@@ -3,6 +3,17 @@
     "version": "1.0.4",
     "description": "Electron IDE opener - extracted from Github Desktop",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kapetacom/electron-ide-opener.git"
+    },
+    "keywords": [
+        "kapeta"
+    ],
+    "bugs": {
+        "url": "https://github.com/kapetacom/electron-ide-opener/issues"
+    },
+    "homepage": "https://github.com/kapetacom/electron-ide-opener#readme",
     "author": {
         "email": "engineering@kapeta.com",
         "name": "Kapeta",
