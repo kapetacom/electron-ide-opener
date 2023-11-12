@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/kapetacom/electron-ide-opener/compare/v1.0.3...v1.0.4) (2023-11-12)
+
+
+### Bug Fixes
+
+* Improve README and readability ([6e6ee0d](https://github.com/kapetacom/electron-ide-opener/commit/6e6ee0d426c2594406150502ae8a3278436adaf8))
+
 ## [1.0.3](https://github.com/kapetacom/electron-ide-opener/compare/v1.0.2...v1.0.3) (2023-11-12)
 
 

@@ -1,6 +1,6 @@
 {
     "name": "@kapeta/electron-ide-opener",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Electron IDE opener - extracted from Github Desktop",
     "license": "MIT",
     "author": {
