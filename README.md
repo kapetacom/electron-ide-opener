@@ -1,7 +1,7 @@
 # electron-ide-opener
-Small library for detecting and opening a file or folder in local IDEs
+Small library for detecting and opening a file or folder in local IDEs.
 
-Mean to be used in Electron apps, but can be used in any Node.js app.
+Meant to be used in Electron apps, but can be used in any Node.js app.
 
 This is a copy / extract from [Github Desktop](https://github.com/desktop/desktop/tree/development/app/src/lib/editors)
 
