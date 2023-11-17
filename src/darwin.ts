@@ -169,6 +169,10 @@ const editors: IDarwinExternalEditor[] = [
         bundleIdentifiers: ['com.jetbrains.intellij.ce'],
     },
     {
+        name: 'IntelliJ IDEA Edu',
+        bundleIdentifiers: ['com.jetbrains.intellij.ie'],
+    },
+    {
         name: 'Xcode',
         bundleIdentifiers: ['com.apple.dt.Xcode'],
     },
