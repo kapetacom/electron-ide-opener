@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/kapetacom/electron-ide-opener/compare/v1.0.5...v1.1.0) (2023-11-17)
+
+
+### Features
+
+* Recognise IntelliJ IDEA Edu on mac ([02f9480](https://github.com/kapetacom/electron-ide-opener/commit/02f9480371eeb366e672eaa51187d35f4c408a0d))
+
 ## [1.0.5](https://github.com/kapetacom/electron-ide-opener/compare/v1.0.4...v1.0.5) (2023-11-12)
 
 
